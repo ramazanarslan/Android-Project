@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exam Timer</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="Minutes"> Dakika</string>
+    <string name="Save"> Kaydet</string>
+    <string name="Reset"> Sıfırla</string>
+    <string name="Cancel"> İptal</string>
+    <string name="TabSaved">Kaydedilmiş</string>
+    <string name="TabClock">Saat</string>
+    <string name="TabTimer">Zamanlayıcı</string>
+    <string name="EnterMinutes"> Dakikayı Giriniz</string>
+    <string name="DoYouWannaExit">Çıkmak istediğinize emin misiniz?</string>
+    <string name="Yes">Evet</string>
+    <string name="No">Hayır</string>
+    <string name="Remember">Remember</string>
+    <string name="Last">Last</string>
+    <string name="Min">Min</string>
+    <string name="Finished">Bitti</string>
+    <string name="Please">Sınıra ulaştın</string>
+    <string name="ChangeTheTime">Süreyi Düzenle</string>
+    <string name="Apply">Uygula</string>
+</resources>

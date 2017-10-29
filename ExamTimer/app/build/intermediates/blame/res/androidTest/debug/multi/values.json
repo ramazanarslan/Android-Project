@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\RamazanArslan\\ExamTimer2 - 1706051219 v6 adMob - Kopya\\ExamTimer2 - 1706051219 v5 adMob\\ExamTimer2 - 1706051219\\ExamTimer2\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\RamazanArslan\\.android\\build-cache\\d304133a66d7eacfbaaa9e3497a03204d51c90f7\\output\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]
