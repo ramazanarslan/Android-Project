@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:text="Doğru Sayısı (80 soru)"
+        android:textSize="20dp"
+        android:id="@+id/TV_yds_dogrusayisi"/>
+
+    <EditText
+        android:id="@+id/ET_yds_number"
+        android:layout_below="@id/TV_yds_dogrusayisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="number"
+
+        />
+
+    <Button
+        android:layout_margin="5dp"
+        android:layout_below="@id/ET_yds_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_yds_hesapla"
+        />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_below="@id/btn_yds_hesapla"
+        android:id="@+id/TV_yds_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

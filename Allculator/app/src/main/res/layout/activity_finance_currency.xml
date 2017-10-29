@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:background="@drawable/currency_backgroud"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <RelativeLayout
+
+                android:id="@+id/first_currency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/first_currency_image_and_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+
+                        android:id="@+id/imageView_first_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/health"
+                        app:srcCompat="@android:drawable/alert_light_frame"/>
+
+                    <TextView
+                        android:id="@+id/txt_currency_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="6dp"
+
+                        android:layout_toEndOf="@+id/imageView_first_currency"
+                        android:textColor="@color/colorSmokeWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_margin="2dp"
+                    android:background="@drawable/shape_of_relativelayout_freeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/first_currency_image_and_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <EditText
+                        android:id="@+id/etxt_currency_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorSmokeWhite" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+
+                        android:id="@+id/img_currency_reverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:rotation="90"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/reverse_w" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <RelativeLayout
+
+                android:id="@+id/second_currency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/second_currency_image_and_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+
+                        android:id="@+id/imageView_second_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/health"
+                        app:srcCompat="@android:drawable/alert_light_frame"/>
+
+                    <TextView
+
+                        android:id="@+id/txt_to_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/imageView_second_currency"
+                        android:textColor="@color/colorSmokeWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_margin="2dp"
+                    android:background="@drawable/shape_of_relativelayout_freeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/second_currency_image_and_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <EditText
+                        android:id="@+id/etxt_currency_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:textColor="@color/colorSmokeWhite" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_pin_currency"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                android:rotation="90"
+                android:src="@drawable/pin_not" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currency_last_updated_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="29/08/2017"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler_recent_currencies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,545 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/common_google_signin_btn_text_dark_disabled"
+             tools:context="com.aprigoldcorporation.allculator.ui.fragments.OthersFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:paddingTop="@dimen/paddingTop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/row1_Ot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_marginBottom="@dimen/margin_all_layout"
+                    android:layout_marginLeft="@dimen/margin_all_layout"
+                    android:layout_marginRight="@dimen/margin_all_layout"
+                    android:layout_marginTop="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+
+                    >
+
+                    <LinearLayout
+
+                        android:id="@+id/LL_Ot_basic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout style="@style/center_relative"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_basic"
+                                    style="@style/Image_Size"
+
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/basic_callculator"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+
+                                    android:layout_below="@id/IV_Ot_basic"
+                                    android:text="@string/BasicCallculator"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_Sci"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp">
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout style="@style/center_relative"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_Sci"
+                                    style="@style/Image_Size"
+
+                                    android:src="@drawable/scientific_call"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_below="@id/IV_Ot_Sci"
+                                    android:text="@string/SciCallculator"
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row2_Ot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row1_Ot"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_ruler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp"
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_ruler"
+                                    style="@style/Image_Size"
+                                    android:scaleType="centerCrop"
+
+                                    android:src="@drawable/ruler"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+
+                                    android:layout_below="@+id/IV_Ot_ruler"
+                                    android:text="@string/Ruler"/>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_bubble"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp">
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_bubble"
+                                    style="@style/Image_Size"
+                                    android:src="@drawable/bubble_level"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+
+                                    android:layout_below="@+id/IV_Ot_bubble"
+                                    android:text="@string/BubbleLevel"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row3_Ot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row2_Ot"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_Taxi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp"
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_taxi"
+                                    style="@style/Image_Size"
+                                    android:src="@drawable/taxi"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_below="@id/IV_Ot_taxi"
+                                    android:text="@string/TaxiFare"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_Shoe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_Shoe"
+                                    style="@style/Image_Size"
+                                    android:src="@drawable/shoe"
+                                    />
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_below="@id/IV_Ot_Shoe"
+                                    android:text="@string/Shoe_measurements"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row4_Ot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row3_Ot"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp"
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_distance"
+                                    style="@style/Image_Size"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/distance_province"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/IV_Ot_distance"
+                                    android:text="@string/Distance_between_two_province"/>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_relation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_relation"
+                                    style="@style/Image_Size"
+                                    android:src="@drawable/relationship"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_below="@id/IV_Ot_relation"
+                                    android:text="@string/Relationship_duration"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row5_Ot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row4_Ot"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_Fuel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp"
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_fuel"
+                                    style="@style/Image_Size"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/fuel"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/IV_Ot_fuel"
+                                    android:text="@string/Fuel_Consumption"/>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_military"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_military"
+                                    style="@style/Image_Size"
+                                    android:src="@drawable/military"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_below="@id/IV_Ot_military"
+                                    android:text="@string/MilitaryServiceTime"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/row6_Ot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row5_Ot"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_Callculation_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp"
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_date"
+                                    style="@style/Image_Size"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/dates"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/IV_Ot_date"
+                                    android:text="@string/TwoDateBetween"/>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ot_how_many"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+
+                        >
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ot_how_many"
+                                    style="@style/Image_Size"
+                                    android:src="@drawable/how_many"/>
+
+                                <TextView
+
+                                    style="@style/Text_style"
+
+                                    android:layout_below="@id/IV_Ot_how_many"
+                                    android:text="@string/How_Many_Days_Was_It"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

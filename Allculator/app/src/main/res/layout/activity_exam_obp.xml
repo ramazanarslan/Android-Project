@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TV_obp_mezuniyet_puanı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:text="Lise Mezuniyet Puanı"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/ET_obp_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_obp_mezuniyet_puanı"
+        android:layout_margin="5dp"
+        android:inputType="number"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_prev_yerlestirme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_obp_number"/>
+
+    <TextView
+        android:id="@+id/tv_checkbox_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ET_obp_number"
+        android:layout_toEndOf="@+id/checkbox_prev_yerlestirme"
+        android:text="@string/checkboxInfo"/>
+
+    <Button
+
+        android:id="@+id/btn_yds_hesapla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_checkbox_info"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="Hesapla"
+        />
+
+    <TextView
+        android:id="@+id/TV_obp_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_yds_hesapla"
+        android:layout_margin="5dp"/>
+
+
+</RelativeLayout>

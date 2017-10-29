@@ -1,0 +1,372 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/common_google_signin_btn_text_dark_disabled"
+
+             tools:context="com.aprigoldcorporation.allculator.ui.fragments.UnitConverterFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/row1_UC"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_marginBottom="@dimen/margin_all_layout"
+                android:layout_marginLeft="@dimen/margin_all_layout"
+                android:layout_marginRight="@dimen/margin_all_layout"
+                android:layout_marginTop="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/LL_UC_Weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Weight"
+                                style="@style/Image_Size"
+
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/weight"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@id/IV_UC_Weight"
+                                android:text="@string/Weight"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_UC_Lenght"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Lemght"
+                                style="@style/Image_Size"
+
+                                android:src="@drawable/length"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Lemght"
+                                android:text="@string/Length"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2_UC"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row1_UC"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_UC_Volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Volume"
+                                style="@style/Image_Size"
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/volume"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@+id/IV_UC_Volume"
+                                android:text="@string/Volume"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_UC_Temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Temp"
+                                style="@style/Image_Size"
+                                android:src="@drawable/temperature"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@+id/IV_UC_Temp"
+                                android:text="@string/Temperature"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row3_UC"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row2_UC"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_UC_Power"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Power"
+                                style="@style/Image_Size"
+                                android:src="@drawable/power"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Power"
+                                android:text="@string/Power"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_UC_Area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Area"
+                                style="@style/Image_Size"
+                                android:src="@drawable/area"
+                                />
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Area"
+                                android:text="@string/Area"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row4_UC"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row3_UC"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_Press"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Press"
+                                style="@style/Image_Size"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/pressure"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/IV_UC_Press"
+                                android:text="@string/Pressure"/>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_UC_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Time"
+                                style="@style/Image_Size"
+                                android:src="@drawable/time"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Time"
+                                android:text="@string/Time"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

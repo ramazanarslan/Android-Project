@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Allculator</string>
+
+    <string name="action_settings">Ayarlar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Favorite_for_tab">Favoriler</string>
+    <string name="UnitConverter_for_tab">Birim Dönüştür</string>
+    <string name="Finances_for_tab">Finans</string>
+    <string name="Exam_for_tab">Sınav</string>
+    <string name="Health_for_tab">Sağlık</string>
+    <string name="Math_for_tab">Matematik</string>
+    <string name="Education_for_tab">Eğitim</string>
+    <string name="Insurance_for_tab">Sigorta</string>
+    <string name="Accountant_for_tab">Muhasebe</string>
+    <string name="Travel_for_tab">Seyahat</string>
+    <string name="Religional_for_tab">Dini</string>
+    <string name="Engineering_for_tab">Mühendis</string>
+    <string name="Others_for_tab">Diğerleri</string>
+
+    <!--//dialog-->
+    <string name="DoYouWannaExit">Çıkmak mı istiyorsun?</string>
+    <string name="Yes">Evet</string>
+    <string name="No">Hayır</string>
+    <string name="RateUs">Bizi Oyla</string>
+
+    <!--//Unit converter products-->
+    <string name="Weight">Ağırlık</string>
+    <string name="Length">Uzunluk</string>
+    <string name="Area">Alan</string>
+    <string name="Temperature">Sıcaklık</string>
+    <string name="Volume">Hacim</string>
+    <string name="Time">Zaman</string>
+    <string name="Power">Güç</string>
+    <string name="Pressure">Basınç</string>
+
+    <!--//Finance products-->
+    <string name="Currency">Döviz</string>
+    <string name="Gold">Altın</string>
+    <string name="Credit">Kredi</string>
+    <string name="Interest">Faiz</string>
+    <string name="Vehicle_inspection_fee">Araç Muayene Ücreti</string>
+
+
+    <!--//Exam products-->
+
+
+    <string name="OBP_School">OBP Okul Puanı</string>
+    <string name="YGS_LYS">YGS-LYS</string>
+    <string name="TEOG">TEOG</string>
+    <string name="YDS">YDS</string>
+    <string name="Driving_Licence">Sürücü Belgesi Sınavı</string>
+    <string name="University">Üniversite Not Ortalaması</string>
+
+
+    <!--4.	Sigorta Hesaplamaları:-->
+
+
+    <string name="Retirement">Emeklilik Hesaplama</string>
+    <string name="Severance_pay">Kıdem Tazminatı Hesaplama</string>
+    <string name="traffic_insurance">Trafik Sigortası</string>
+    <string name="Kasko">Kasko</string>
+    <string name="Health_Insurance">Sağlık Sigortası</string>
+
+
+    <!--5.	Sağlık Hesaplamaları:-->
+    <!--•	Yaş hesaplama-->
+    <!--•	İdeal Kilo-->
+    <!--•	Vücut kitle endeksi-->
+
+    <string name="Age">Yaş Hesaplama</string>
+    <string name="ideal_weight">İdeal Kilo Hesaplama</string>
+    <string name="Body_mass_index">Vücut Kitle Endeksi</string>
+
+
+    <!--Matematik-->
+    <string name="Percentage">Yüzde Hesaplama</string>
+    <string name="Profit_Loss">Kar-Zarar Hesaplama</string>
+
+
+    <!--7.	Dini Hesaplamalar:-->
+    <!--•	Zikirmatik-->
+    <!--•	Kaza namazı hesaplama-->
+    <!--•	Zekat Hesaplama-->
+    <!--•	Namaz Vakitleri-->
+    <!--•	Kıble Yönü Hesaplama-->
+
+    <string name="Zikirmatik"> Zikirmatik</string>
+    <string name="Kaza_Namazı">Kaza Namazı</string>
+    <string name="Zekat">Zekat</string>
+    <string name="Namaz_Vakitleri">Namaz Vakitleri</string>
+    <string name="Kible_yonu">Kıble Yönü</string>
+
+
+    <!--8.	Hesap Makinesi:-->
+    <!--•	Basit-->
+    <!--•	Bilimsel-->
+    <!--9.	Cetvel-->
+    <!--10.	Diğer Hesaplamalar:-->
+    <!--•	Su terazisi-->
+    <!--•	Taksi Ücreti-->
+    <!--•	İlişki Süresi-->
+    <!--•	Yakıt Tüketim (benzin)-->
+    <!--•	Şafak Hesaplama-->
+    <!--•	İki tarih arasındaki günü hesaplama-->
+    <!--•	Kaç gün oldu?-->
+    <!--•	İller arasındaki mesafe-->
+    <!--•	Ayakkabı ölçüleri(birimcevir.com)-->
+
+
+    <string name="BasicCallculator">Basit Hesap Makinesi</string>
+    <string name="SciCallculator">Bilimsel Hesap Makinesi</string>
+    <string name="Ruler">Cetvel</string>
+    <string name="BubbleLevel">Su Seviyesi</string>
+    <string name="TaxiFare">Taksi Ücreti</string>
+    <string name="Shoe_measurements">Ayakkabı Ölçüsü</string>
+    <string name="Distance_between_two_province">İller Arası Mesafe Hesaplama</string>
+    <string name="Relationship_duration">İlişki Durumu</string>
+    <string name="Fuel_Consumption">Yakıt Tüketimi Hesaplama</string>
+    <string name="MilitaryServiceTime">Şafak Hesaplama</string>
+    <string name="TwoDateBetween">İki Tarih Arasındaki Gün Sayısını Hesaplama</string>
+    <string name="How_Many_Days_Was_It">Kaç Gün Kaldı Hesaplama</string>
+
+
+    <string name="vertical_form_stepper_form_continue">İlerle</string>
+    <string name="vertical_form_stepper_form_confirm_button">Sonucu Göster</string>
+    <string name="vertical_form_stepper_form_last_step">Bitir</string>
+
+
+    //ruler
+
+    <string name ="zero_inch_textview">0</string>
+    <string name="one_inch_textview">1</string>
+    <string name ="two_inch_textview">2</string>
+    <string name ="three_inch_textview">3</string>
+    <string name="four_inch_textview">4</string>
+
+    <string name="centimeter_abbreviation">Cm</string>
+    <string name="millimeter_abbreviation">Mm</string>
+
+    <string name ="centimeter_calculation">Cm%1$s %2$s</string>
+    <string name ="millimeter_calculation">Mm%1$s %2$s</string>
+
+
+</resources>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#f44437</color>
+    <color name="colorSmokeWhite">#f9f9f9</color>
+    <color name="colorDarkGray">#c9c9c9</color>
+    <color name="colorGray">#696969</color>
+    <color name="colorYes">#419dfe1f</color>
+    <color name="colorNo">#6afd2d08</color>
+    <color name="colorRateus">#5d878787</color>
+    <color name="colorSmokeWhiteFreeze">#27ffffff</color>
+    <color name="colorOrange">#e87f08</color>
+    <color name="colorUC_Tab">#737373</color>
+    <color name="colorUC_Taqb">#3fafbc</color>
+    <color name="colorLogoColor">#f44437</color>
+    <color name="primary">#2196F3</color>
+    <color name="primaryDark">#0D47A1</color>
+    <color name="accentColor">#FF9800</color>
+    <color name="inchMarkers">#03A9F4</color>
+
+</resources>
