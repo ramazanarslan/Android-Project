@@ -1,0 +1,384 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/common_google_signin_btn_text_dark_disabled"
+             tools:context="com.aprigoldcorporation.allculator.ui.fragments.CategoryFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_marginBottom="@dimen/margin_all_layout"
+                android:layout_marginLeft="@dimen/margin_all_layout"
+                android:layout_marginRight="@dimen/margin_all_layout"
+                android:layout_marginTop="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="3"
+
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/LL_UnitConverter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/IV_UnitConverter"
+                                style="@style/Image_Size_category"
+
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/unit_converter"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+
+                                android:layout_below="@id/IV_UnitConverter"
+                                android:text="@string/UnitConverter_for_tab"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Finans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_Finans"
+                                style="@style/Image_Size_category"
+
+                                android:src="@drawable/finance"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+                                android:layout_below="@id/IV_Finans"
+                                android:text="@string/Finances_for_tab"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_Exam"
+                                style="@style/Image_Size_category"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/exam"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+                                android:layout_below="@id/IV_Exam"
+                                android:text="@string/Exam_for_tab"
+
+                                />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row1"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_Health"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_Health"
+                                style="@style/Image_Size_category"
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/health"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+
+                                android:layout_below="@+id/IV_Health"
+                                android:text="@string/Health_for_tab"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Math"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_Math"
+                                style="@style/Image_Size_category"
+                                android:src="@drawable/math_2"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+
+                                android:layout_below="@+id/IV_Math"
+                                android:text="@string/Math_for_tab"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LL_Insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_Insurance"
+                                style="@style/Image_Size_category"
+                                android:src="@drawable/insurance"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+                                android:layout_below="@id/IV_Insurance"
+                                android:text="@string/Insurance_for_tab"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row2"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_Religional"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+
+                            <ImageView
+                                android:id="@+id/IV_Religional"
+                                style="@style/Image_Size_category"
+                                android:src="@drawable/religional"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+                                android:layout_below="@id/IV_Religional"
+                                android:text="@string/Religional_for_tab"
+
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LL_Engineering"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout_freeze">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_Engineering"
+                                style="@style/Image_Size_category"
+
+                                android:src="@drawable/engineering"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+                                android:layout_below="@id/IV_Engineering"
+                                android:text="@string/Engineering_for_tab"
+
+                                />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Others"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_Others"
+                                style="@style/Image_Size_category"
+                                android:src="@drawable/others"/>
+
+                            <TextView
+
+                                style="@style/Text_style_category"
+
+                                android:layout_below="@id/IV_Others"
+                                android:text="@string/Others_for_tab"
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</FrameLayout>

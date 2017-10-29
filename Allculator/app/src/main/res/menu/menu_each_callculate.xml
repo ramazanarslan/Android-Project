@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.aprigoldcorporation.allculator.ui.activities.MainActivity">
+
+
+    <item
+        android:id="@+id/add_favori"
+        android:icon="@drawable/no_ads"
+        android:orderInCategory="200"
+        android:title="No ADs"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/setings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always"/>
+
+
+</menu>

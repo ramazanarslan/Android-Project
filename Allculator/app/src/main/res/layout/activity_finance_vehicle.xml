@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/textView_choose_vehicle_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Choose Vehicle Class"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView_choose_vehicle_class"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:paddingTop="@dimen/paddingTop"
+            android:id="@+id/RL_Vehicle_class">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/row1_Vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_marginBottom="@dimen/margin_all_layout"
+                    android:layout_marginLeft="@dimen/margin_all_layout"
+                    android:layout_marginRight="@dimen/margin_all_layout"
+                    android:layout_marginTop="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+
+                    >
+
+                    <LinearLayout
+
+                        android:id="@+id/LL_Otomobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+
+                        android:paddingRight="5dp"
+                        android:tag="vehicle2">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+                                style="@style/center_relative"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
+
+                                <ImageView
+                                    android:id="@+id/IV_Otomobil"
+                                    style="@style/Image_Size_category"
+
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+
+                                    android:layout_below="@id/IV_Otomobil"
+                                    android:text="Otomobil" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Minibus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle2">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Minibus"
+                                    style="@style/Image_Size_category"
+
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Minibus"
+                                    android:text="Minibüs" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Kamyonet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+                        android:tag="vehicle2">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+
+                            <RelativeLayout style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Kamyonet"
+                                    style="@style/Image_Size_category"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Kamyonet"
+                                    android:text="Kamyonet"
+
+                                    />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row2_Vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row1_Vehicle"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Otobus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle1">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Otobus"
+                                    style="@style/Image_Size_category"
+                                    android:scaleType="centerCrop"
+
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+
+                                    android:layout_below="@+id/IV_Otobus"
+                                    android:text="Otobüs" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Kamyon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle1">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Kamyon"
+                                    style="@style/Image_Size_category"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+
+                                    android:layout_below="@+id/IV_Kamyon"
+                                    android:text="Kamyon" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LL_Motosiklet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp">
+
+                        <RelativeLayout
+                            style="@style/EachPiece_RelativeLayout"
+                            android:tag="vehicle3">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Motosiklet"
+                                    style="@style/Image_Size_category"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Motosiklet"
+                                    android:text="Motosiklet" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row3_Vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row2_Vehicle"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Traktor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle3">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+
+                                <ImageView
+                                    android:id="@+id/IV_Traktor"
+                                    style="@style/Image_Size_category"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Traktor"
+                                    android:text="Traktör"
+
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LL_Cekici"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle1">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout_freeze">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Cekici"
+                                    style="@style/Image_Size_category"
+
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Cekici"
+                                    android:text="Çekici"
+
+                                    />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Tanker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+                        android:tag="vehicle1">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Tanker"
+                                    style="@style/Image_Size_category"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Tanker"
+                                    android:text="Tanker"
+
+                                    />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row4_Vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragments_layoutHeight"
+                    android:layout_below="@id/row3_Vehicle"
+                    android:layout_margin="@dimen/margin_all_layout"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/LL_Romork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle2">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+
+                                <ImageView
+                                    android:id="@+id/IV_Romork"
+                                    style="@style/Image_Size_category"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Romork"
+                                    android:text="Römork"
+
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LL_Arazi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:tag="vehicle2">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout_freeze">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Arazi"
+                                    style="@style/Image_Size_category"
+
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Arazi"
+                                    android:text="Arazi Taşıtı"
+
+                                    />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL_Ozel_Amacli"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:onClick="vehiclePicked"
+                        android:orientation="horizontal"
+                        android:tag="vehicle2">
+
+                        <RelativeLayout style="@style/EachPiece_RelativeLayout">
+
+                            <RelativeLayout
+
+                                style="@style/center_relative">
+
+                                <ImageView
+                                    android:id="@+id/IV_Ozel_Amacli"
+                                    style="@style/Image_Size_category"
+                                    android:src="@drawable/vehicle" />
+
+                                <TextView
+
+                                    style="@style/Text_style_category"
+
+                                    android:layout_below="@id/IV_Ozel_Amacli"
+                                    android:text="Özel Amaçlı Taşıt"
+
+                                    />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/RL_Vehicle_class">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gecikme Süresi"
+                android:gravity="center"/>
+
+            <Spinner
+                android:id="@+id/finance_vehicle_delayTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="2918 sayılı 'Karayolları Trafik Kanunu'nun 35. maddesi uyarınca, muayene süresi geçirilen her araçtan, gecikilen beher ay için muayene ücreti %5 oranında fazla bedel ile tahsil edilir."/>
+            <Button
+                android:id="@+id/finance_vehicle_btn_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/finance_vehicle_txt_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
+

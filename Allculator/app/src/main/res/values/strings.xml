@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Allculator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Favorite_for_tab">Favorites</string>
+    <string name="UnitConverter_for_tab">Unit Converter</string>
+    <string name="Finances_for_tab">Finance</string>
+    <string name="Exam_for_tab">Exam</string>
+    <string name="Health_for_tab">Health</string>
+    <string name="Math_for_tab">Math</string>
+    <string name="Education_for_tab">Education</string>
+    <string name="Insurance_for_tab">Insurance</string>
+    <string name="Accountant_for_tab">Accountant</string>
+    <string name="Travel_for_tab">Travel</string>
+    <string name="Religional_for_tab">Religional</string>
+    <string name="Engineering_for_tab">Engineering</string>
+    <string name="Others_for_tab">Others</string>
+
+    <!--//dialog-->
+    <string name="DoYouWannaExit">Do you want to exit?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="RateUs">Rate Us</string>
+
+    <!--//Unit converter products-->
+    <string name="Weight">Weight</string>
+    <string name="Length">Lenght</string>
+    <string name="Area">Area</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Volume">Volume</string>
+    <string name="Time">Time</string>
+    <string name="Power">Power</string>
+    <string name="Pressure">Pressure</string>
+
+    <!--//Finance products-->
+    <string name="Currency">Currency</string>
+    <string name="Gold">Gold</string>
+    <string name="Credit">Credit</string>
+    <string name="Interest">Interest</string>
+    <string name="Vehicle_inspection_fee">Vehicle Inspection Fee</string>
+
+
+    <!--//Exam products-->
+
+
+    <string name="OBP_School">OBP School Point</string>
+    <string name="YGS_LYS">YGS LYS</string>
+    <string name="TEOG">TEOG</string>
+    <string name="YDS">YDS</string>
+    <string name="Driving_Licence">Driving Licence Exam</string>
+    <string name="University">University Grade Average</string>
+
+
+    <!--4.	Sigorta Hesaplamaları:-->
+
+
+    <string name="Retirement">Retirement Age</string>
+    <string name="Severance_pay">Severance Pay</string>
+    <string name="traffic_insurance">Traffic Insurance</string>
+    <string name="Kasko">Vehicle Insurance</string>
+    <string name="Health_Insurance">Health Insurance</string>
+
+
+    <!--5.	Sağlık Hesaplamaları:-->
+    <!--•	Yaş hesaplama-->
+    <!--•	İdeal Kilo-->
+    <!--•	Vücut kitle endeksi-->
+
+    <string name="Age"> Age</string>
+    <string name="ideal_weight"> Ideal Weight</string>
+    <string name="Body_mass_index">Body Mass Index</string>
+
+
+    <!--Matematik-->
+    <string name="Percentage">Percentage</string>
+    <string name="Profit_Loss">Profit Loss</string>
+
+
+    <!--7.	Dini Hesaplamalar:-->
+    <!--•	Zikirmatik-->
+    <!--•	Kaza namazı hesaplama-->
+    <!--•	Zekat Hesaplama-->
+    <!--•	Namaz Vakitleri-->
+    <!--•	Kıble Yönü Hesaplama-->
+
+    <string name="Zikirmatik"> Zikirmatik</string>
+    <string name="Kaza_Namazı">Kaza Namazı</string>
+    <string name="Zekat">Zekat</string>
+    <string name="Namaz_Vakitleri">Namaz Vakitleri</string>
+    <string name="Kible_yonu">Kıble Yönü</string>
+
+
+    <!--8.	Hesap Makinesi:-->
+    <!--•	Basit-->
+    <!--•	Bilimsel-->
+    <!--9.	Cetvel-->
+    <!--10.	Diğer Hesaplamalar:-->
+    <!--•	Su terazisi-->
+    <!--•	Taksi Ücreti-->
+    <!--•	İlişki Süresi-->
+    <!--•	Yakıt Tüketim (benzin)-->
+    <!--•	Şafak Hesaplama-->
+    <!--•	İki tarih arasındaki günü hesaplama-->
+    <!--•	Kaç gün oldu?-->
+    <!--•	İller arasındaki mesafe-->
+    <!--•	Ayakkabı ölçüleri(birimcevir.com)-->
+
+
+    <string name="BasicCallculator">Basic Callculator</string>
+    <string name="SciCallculator">Scientific Callculator</string>
+    <string name="Ruler">Ruler</string>
+    <string name="BubbleLevel">Bubble Level</string>
+    <string name="TaxiFare">Taxi Fare</string>
+    <string name="Shoe_measurements">Shoe Measurements</string>
+    <string name="Distance_between_two_province">Distance between 2 Province</string>
+    <string name="Relationship_duration">Relationship Duration</string>
+    <string name="Fuel_Consumption">Fuel Consumption</string>
+    <string name="MilitaryServiceTime">Military Service Time</string>
+    <string name="TwoDateBetween">Calculation Between 2 Dates</string>
+    <string name="How_Many_Days_Was_It">How Many Days Was It?</string>
+
+    <string name="gender">Choose Your Gender</string>
+
+
+    //obp
+    <string name="checkboxInfo">Önceki yerleştirmede bir programa yerleştirildiyseniz bu kutucuğu işaretleyiniz (Açık öğretim kontenjansız bölümleri ve sınavsız geçişle bir yere yerleşenler hariç)</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+
+    <!--<item>-->
+        <!--<shape>-->
+            <!--&lt;!&ndash; set the shadow color here &ndash;&gt;-->
+            <!--<stroke-->
+                <!--android:width="1dp"-->
+                <!--android:color="#4b8f8f8f" />-->
+
+            <!--&lt;!&ndash; setting the thickness of shadow (positive value will give shadow on that side) &ndash;&gt;-->
+
+            <!--<padding-->
+                <!--android:bottom="2dp"-->
+                <!--android:left="2dp"-->
+                <!--android:right="-1dp"-->
+                <!--android:top="-1dp" />-->
+
+            <!--<corners android:radius="7dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!-- Background -->
+
+    <item>
+        <shape>
+            <solid android:color="@color/colorLogoColor" />
+            <corners android:radius="9dp" />
+        </shape>
+    </item>
+</layer-list>

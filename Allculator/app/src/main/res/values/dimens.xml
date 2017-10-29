@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="paddingLeft">8dp</dimen>
+    <dimen name="paddingRight">8dp</dimen>
+    <dimen name="paddingTop">8dp</dimen>
+    <dimen name="paddingBottom">8dp</dimen>
+    <dimen name="fragments_layoutHeight">70dp</dimen>
+    <dimen name="margin_right_between_layouts">15dp</dimen>
+    <dimen name="spacing">5dp</dimen>
+    <dimen name="margin_all_layout">5dp</dimen>
+
+//ruler
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="inch_marker_height">45dp</dimen>
+    <dimen name="sixteenth_marker_height">10dp</dimen>
+    <dimen name="eigths_marker_height">15dp</dimen>
+    <dimen name="fourths_marker_height">25dp</dimen>
+    <dimen name="half_marker_height">35dp</dimen>
+
+    <dimen name="marker_width">1dp</dimen>
+    <!-- 9dp to account for the width -->
+    <dimen name="marker_separation_width">9dp</dimen>
+
+
+
+
+    <!--  Simple Calculator -->
+    <dimen name="simple_calc_input_textview_height">75dp</dimen>
+    <dimen name="simple_calc_input_textview_padding">15dp</dimen>
+    <dimen name="simple_calc_delete_img_width">75dp</dimen>
+    <dimen name="simple_calc_delete_img_padding">15dp</dimen>
+    <dimen name="simple_calc_result_textview_height">40dp</dimen>
+    <dimen name="simple_calc_result_textview_paddingEnd">25dp</dimen>
+
+    <!--  Advanced Calculator -->
+    <dimen name="advanced_calc_input_textview_height">75dp</dimen>
+    <dimen name="advanced_calc_input_textview_padding">15dp</dimen>
+    <dimen name="advanced_calc_delete_img_width">75dp</dimen>
+    <dimen name="advanced_calc_delete_img_padding">15dp</dimen>
+    <dimen name="advanced_calc_result_textview_height">40dp</dimen>
+    <dimen name="advanced_calc_result_textview_paddingEnd">25dp</dimen>
+
+    <!--  Unit Converter Calculator -->
+    <dimen name="unit_converter_input_padding_top">40dp</dimen>
+    <dimen name="unit_converter_input_padding_left">20dp</dimen>
+
+    <!--  Search Activity -->
+
+    <dimen name="search_padding_top">10dp</dimen>
+    <dimen name="search_padding_left">20dp</dimen>
+    <dimen name="search_text_margin_top">5dp</dimen>
+
+</resources>

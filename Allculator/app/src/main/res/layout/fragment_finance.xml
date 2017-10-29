@@ -1,0 +1,372 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/common_google_signin_btn_text_dark_disabled"
+             tools:context="com.aprigoldcorporation.allculator.ui.fragments.FinanceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/row1_F"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_marginBottom="@dimen/margin_all_layout"
+                android:layout_marginLeft="@dimen/margin_all_layout"
+                android:layout_marginRight="@dimen/margin_all_layout"
+                android:layout_marginTop="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/LL_F_Currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_F_Currecy"
+                                style="@style/Image_Size"
+
+                                android:src="@drawable/currency"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@id/IV_F_Currecy"
+                                android:text="@string/Currency"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_F_Gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_F_Gold"
+                                style="@style/Image_Size"
+
+                                android:src="@drawable/gold"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_F_Gold"
+                                android:text="@string/Gold"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2_F"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row1_F"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_F_Credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/IV_F_Credit"
+                                style="@style/Image_Size"
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/credit"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@+id/IV_F_Credit"
+                                android:text="@string/Credit"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_F_inter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:scaleType="fitCenter"
+                                android:id="@+id/IV_F_inter"
+                                style="@style/Image_Size"
+                                android:src="@drawable/interest"
+                               />
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@+id/IV_F_inter"
+                                android:text="@string/Interest"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row3_F"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row2_F"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_F_Vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_F_Vehicle"
+                                style="@style/Image_Size"
+                                android:src="@drawable/vehicle"
+                               />
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_F_Vehicle"
+                                android:text="@string/Vehicle_inspection_fee"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_F_F"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:visibility="invisible"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Area"
+                                style="@style/Image_Size"
+                                android:src="@drawable/insurance"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Area"
+                                android:text="@string/Area"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row4_F"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row3_F"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_Bos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Press"
+                                style="@style/Image_Size"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/insurance"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/IV_UC_Press"
+                                android:text="@string/Pressure"/>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Bos1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Time"
+                                style="@style/Image_Size"
+                                android:src="@drawable/insurance"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Time"
+                                android:text="@string/Time"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

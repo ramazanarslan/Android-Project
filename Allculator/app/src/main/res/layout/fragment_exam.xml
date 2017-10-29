@@ -1,0 +1,372 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/common_google_signin_btn_text_dark_disabled"
+             tools:context="com.aprigoldcorporation.allculator.ui.fragments.ExamFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/row1_EX"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_marginBottom="@dimen/margin_all_layout"
+                android:layout_marginLeft="@dimen/margin_all_layout"
+                android:layout_marginRight="@dimen/margin_all_layout"
+                android:layout_marginTop="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/LL_Ex_YGS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_F_Currecy"
+                                style="@style/Image_Size"
+
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ygslys"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@id/IV_F_Currecy"
+                                android:text="@string/YGS_LYS"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL__EX_TEOG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout style="@style/center_relative"
+                            >
+
+                            <ImageView
+                                android:id="@+id/IV_F_Gold"
+                                style="@style/Image_Size"
+
+                                android:src="@drawable/teog"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_F_Gold"
+                                android:text="@string/TEOG"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2_EX"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row1_EX"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL__EX_OBP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+
+                            <ImageView
+                                android:id="@+id/IV_F_Credit"
+                                style="@style/Image_Size"
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/obp"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@+id/IV_F_Credit"
+                                android:text="@string/OBP_School"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL__EX_YDS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_F_inter"
+                                style="@style/Image_Size"
+                                android:src="@drawable/yds"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+
+                                android:layout_below="@+id/IV_F_inter"
+                                android:text="@string/YDS"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row3_EX"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row2_EX"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL__EX_DR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_F_Vehicle"
+                                style="@style/Image_Size"
+                                android:src="@drawable/driving_licence"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_F_Vehicle"
+                                android:text="@string/Driving_Licence"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/LL_EX_Uni"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Area"
+                                style="@style/Image_Size"
+                                android:src="@drawable/gpa"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Area"
+                                android:text="@string/University"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/row4_EX"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragments_layoutHeight"
+                android:layout_below="@id/row3_EX"
+                android:layout_margin="@dimen/margin_all_layout"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL_Bos3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Press"
+                                style="@style/Image_Size"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/insurance"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/IV_UC_Press"
+                                android:text="@string/Pressure"/>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Bos4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <RelativeLayout
+                        style="@style/EachPiece_RelativeLayout">
+
+                        <RelativeLayout
+
+                            style="@style/center_relative">
+
+                            <ImageView
+                                android:id="@+id/IV_UC_Time"
+                                style="@style/Image_Size"
+                                android:src="@drawable/insurance"/>
+
+                            <TextView
+
+                                style="@style/Text_style"
+
+                                android:layout_below="@id/IV_UC_Time"
+                                android:text="@string/Time"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TV_hesaplama_turu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:text="Hesaplama Türü"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/math_percent_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/TV_hesaplama_turu">
+
+        <RadioButton
+            android:id="@+id/rBtn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="A sayısının %B`si kaçtır?"/>
+
+        <RadioButton
+            android:id="@+id/rBtn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text=" A sayısı B sayısının yüzde kaçıdır?"
+            />
+
+        <RadioButton
+            android:id="@+id/rBtn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text=" A sayısından B sayısına değişim oranı yüzde kaçtır?"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ET_A_sayisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/math_percent_radiogroup"
+        android:layout_margin="10dp"
+        android:hint="A sayısı Örn: 1025"
+        android:inputType="number|numberSigned" />
+
+    <EditText
+        android:id="@+id/ET_B_sayisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_A_sayisi"
+        android:layout_margin="10dp"
+        android:hint="A sayısı Örn: 1025"
+        android:inputType="number|numberSigned" />
+
+    <Button
+        android:id="@+id/btn_percent_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_B_sayisi"
+        android:text="Hesapla"/>
+
+    <TextView
+        android:id="@+id/txt_math_percent_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_percent_calc"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text=""/>
+
+</RelativeLayout>
